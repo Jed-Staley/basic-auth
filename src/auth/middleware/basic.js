@@ -1,8 +1,7 @@
 'use strict';
 
 const base64 = require('base-64');
-const { sequelize } = require('../models/index');
-const Users = require('../models/users-model')(sequelize);
+const { Users } = require('../models/index');
 
 async function basicAuth(req, res, next) {
   if (!req.headers.authorization) {
