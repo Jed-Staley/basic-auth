@@ -1,6 +1,6 @@
 'use strict';
 
-const handler404 = require('../src/handlers/404');
+const handler404 = require('./404');
 const httpMocks = require('node-mocks-http');
 
 describe('404 Error Handler', () => {

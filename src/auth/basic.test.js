@@ -1,10 +1,10 @@
 'use strict';
 
-const basicAuth = require('../src/auth/middleware/basic');
-const { Users } = require('../src/auth/models/users-model');
+const basicAuth = require('./middleware/basic');
+const { Users } = require('./models/users-model');
 const httpMocks = require('node-mocks-http');
 
-jest.mock('../src/auth/models/users-model');
+jest.mock('./models/users-model');
 
 describe('Basic Auth Middleware', () => {
   it('should authenticate a user with valid credentials', async () => {
