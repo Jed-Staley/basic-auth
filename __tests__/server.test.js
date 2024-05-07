@@ -33,7 +33,6 @@ describe('Authentication routes', () => {
       username: 'testuser',
       password: 'testpassword',
     });
-
     const response = await request.post('/signin')
       .auth('testuser', 'testpassword');
     expect(response.status).toBe(200);
